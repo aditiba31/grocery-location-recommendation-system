@@ -1,0 +1,43 @@
+store_name,street,city,state,zip_code,phone,store_url,latitude,longitude,split
+Hollywood (206),1600 N Vine St,Los Angeles,CA,90028,323-856-0689,https://locations.traderjoes.com/ca/los-angeles/206/,,,test
+Studio City (122),11976 Ventura Blvd,Studio City,CA,91604,818-509-0168,https://locations.traderjoes.com/ca/studio-city/122/,34.1429858,-118.3933469,test
+San Carlos (174),1482 El Camino Real,San Carlos,CA,94070,650-594-2138,https://locations.traderjoes.com/ca/san-carlos/174/,37.4963822,-122.2485587,test
+Santa Rosa - Cleveland Ave (75),3225 Cleveland Ave,Santa Rosa,CA,95403,707-525-1406,https://locations.traderjoes.com/ca/santa-rosa/75/,38.4735606,-122.7322873,test
+Torrance - Hawthorne Blvd (121),19720 Hawthorne Blvd,Torrance,CA,90503,310-793-8585,https://locations.traderjoes.com/ca/torrance/121/,33.8522626,-118.3532417,test
+Ladera Ranch (257),27542 Antonio Pkwy,Ladera Ranch,CA,92694,949-239-6429,https://locations.traderjoes.com/ca/ladera-ranch/257/,33.5629148,-117.6275246,test
+Irvine - University Ctr (111),4225 Campus Dr,Irvine,CA,92612,949-509-6138,https://locations.traderjoes.com/ca/irvine/111/,33.6503583,-117.8375537,test
+Mall of Orange (46),2114 N Tustin St,Orange,CA,92865,714-283-5697,https://locations.traderjoes.com/ca/orange/46/,33.8233576,-117.8364411,test
+Hermosa Beach (248),1100 Pacific Coast Hwy,Hermosa Beach,CA,90254,310-318-1767,https://locations.traderjoes.com/ca/hermosa-beach/248/,33.8639002,-118.391905,test
+Whittier (48),15025 E Whittier Blvd,Whittier,CA,90603,562-698-1642,https://locations.traderjoes.com/ca/whittier/48/,,,test
+Santa Monica (256),500 Broadway,Santa Monica,CA,90401,310-912-6877,https://locations.traderjoes.com/ca/santa-monica/256/,34.0155924,-118.4919687,test
+La Habra (5),"2101 W. Imperial Hwy, Suite A",La Habra,CA,90631,562-266-1428,https://locations.traderjoes.com/ca/la-habra/5/,,,test
+Granada Hills (44),11114 Balboa Blvd,Granada Hills,CA,91344,818-368-6461,https://locations.traderjoes.com/ca/granada-hills/44/,34.2726605,-118.5016373,test
+Menlo Park (69),720 Menlo Ave,Menlo Park,CA,94025,650-323-2134,https://locations.traderjoes.com/ca/menlo-park/69/,37.4512357,-122.1835596,test
+Claremont (214),475 W Foothill Blvd,Claremont,CA,91711,909-625-8784,https://locations.traderjoes.com/ca/claremont/214/,34.1073555,-117.7219566,test
+La Canada (42),475 Foothill Blvd,La Canada,CA,91011,818-790-6373,https://locations.traderjoes.com/ca/la-canada/42/,34.2000835,-118.1883764,test
+San Rafael (61),337 3rd St,San Rafael,CA,94901,415-454-9530,https://locations.traderjoes.com/ca/san-rafael/61/,37.969678,-122.5165256,test
+West Hollywood (173),8611 Santa Monica Blvd,West Hollywood,CA,90069,310-657-0152,https://locations.traderjoes.com/ca/west-hollywood/173/,34.0880565,-118.3796094,test
+Roseville (80),1117 Roseville Square,Roseville,CA,95678,916-784-9084,https://locations.traderjoes.com/ca/roseville/80/,38.7462846,-121.2749314,test
+Emeryville (72),5700 Christie Ave,Emeryville,CA,94608,510-658-8091,https://locations.traderjoes.com/ca/emeryville/72/,37.837028,-122.2942547,test
+San Luis Obispo (41),3977 Higuera Street,San Luis Obispo,CA,93401,805-783-2780,https://locations.traderjoes.com/ca/san-luis-obispo/41/,35.2450515,-120.6732686,test
+Ventura - Midtown (218),"103 S Mills Rd, Ste 104",Ventura,CA,93003,805-658-2664,https://locations.traderjoes.com/ca/ventura/218/,,,test
+Alameda (109),2217 South Shore Ctr,Alameda,CA,94501,510-769-5450,https://locations.traderjoes.com/ca/alameda/109/,37.7577613,-122.2514016,test
+Huntington Beach - Brookhurst (241),21431 Brookhurst St,Huntington Beach,CA,92646,714-968-4070,https://locations.traderjoes.com/ca/huntington-beach/241/,33.6517938,-117.954554,test
+San Francisco - North Beach (19),401 Bay St,San Francisco,CA,94133,415-351-1013,https://locations.traderjoes.com/ca/san-francisco/19/,37.8054807,-122.4137896,test
+Roseville - North (266),10261 Fairway Dr,Roseville,CA,95678,279-217-4579,https://locations.traderjoes.com/ca/roseville/266/,38.7835732,-121.2708638,test
+San Francisco - Stonestown (236),265 Winston Dr,San Francisco,CA,94132,415-665-1835,https://locations.traderjoes.com/ca/san-francisco/236/,37.7265935,-122.4762074,test
+Novato (198),7514 Redwood Blvd,Novato,CA,94945,415-898-9359,https://locations.traderjoes.com/ca/novato/198/,38.1117887,-122.5679241,test
+Napa (128),3654 Bel Aire Plaza,Napa,CA,94558,707-256-0806,https://locations.traderjoes.com/ca/napa/128/,38.3227883,-122.3059235,test
+Petaluma (107),169 N McDowell Blvd,Petaluma,CA,94954,707-769-2782,https://locations.traderjoes.com/ca/petaluma/107/,38.2487885,-122.6294115,test
+Marina Del Rey (205),4675 Admiralty Way,Marina Del Rey,CA,90292,310-301-4461,https://locations.traderjoes.com/ca/marina-del-rey/205/,33.9795332,-118.4413064,test
+Los Angeles - 3rd & Fairfax (240),175 South Fairfax Ave,Los Angeles,CA,90036,323-931-4012,https://locations.traderjoes.com/ca/los-angeles/240/,34.0719415,-118.3616547,test
+Rancho Palos Verdes (233),31176 Hawthorne Blvd,Rancho Palos Verdes,CA,90275,310-544-1727,https://locations.traderjoes.com/ca/rancho-palos-verdes/233/,33.7493322,-118.4066849,test
+Yucaipa (268),31545 Yucaipa Boulevard,Yucaipa,CA,92399,909-951-6154,https://locations.traderjoes.com/ca/yucaipa/268/,34.0291372,-117.1153248,test
+Chula Vista (120),"878 Eastlake Pkwy, Ste 810",Chula Vista,CA,91914,619-656-5370,https://locations.traderjoes.com/ca/chula-vista/120/,,,test
+Toluca Lake (54),10130 Riverside Dr,Toluca Lake,CA,91602,818-762-2787,https://locations.traderjoes.com/ca/toluca-lake/54/,34.1519441,-118.3519203,test
+Los Altos (127),2310 Homestead Rd,Los Altos,CA,94024,408-245-1917,https://locations.traderjoes.com/ca/los-altos/127/,37.3363953,-122.066598,test
+Oceanside (22),2570 Vista Way,Oceanside,CA,92054,760-433-9994,https://locations.traderjoes.com/ca/oceanside/22/,33.1840258,-117.3318769,test
+Castro Valley (84),22224 Redwood Road,Castro Valley,CA,94546,510-538-2738,https://locations.traderjoes.com/ca/castro-valley/84/,37.6854582,-122.0730356,test
+Modesto (9),3250 Dale Road,Modesto,CA,95356,209-491-0445,https://locations.traderjoes.com/ca/modesto/9/,37.6879386,-121.0494206,test
+South San Francisco (187),301 MC Lellan Dr,South San Francisco,CA,94080,650-583-6401,https://locations.traderjoes.com/ca/south-san-francisco/187/,,,test
+Northridge (312),9224 Reseda Blvd,Northridge,CA,91325,747-245-4766,https://locations.traderjoes.com/ca/northridge/312/,34.2378132,-118.5359872,test
