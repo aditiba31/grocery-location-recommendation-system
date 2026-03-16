@@ -1,2 +1,5 @@
-model,test_auc,notes
-Logistic Regression,0.8467,"Baseline — class_weight=balanced, StandardScaler"
+model,train_auc,test_auc,notes
+Logistic Regression,0.8844,0.8467,Baseline
+Ridge,0.8848,0.8478,"L2, C=10.0"
+Lasso,0.878,0.8363,"L1, C=0.1"
+KNN,1.0,0.4923,"k=21, distance weights"
