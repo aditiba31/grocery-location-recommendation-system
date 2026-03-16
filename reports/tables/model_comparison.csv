@@ -1,0 +1,2 @@
+model,test_auc,notes
+Logistic Regression,0.8467,"Baseline — class_weight=balanced, StandardScaler"

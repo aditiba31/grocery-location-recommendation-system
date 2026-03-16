@@ -2,6 +2,7 @@
 # Reads raw scraped CSV, geocodes addresses, splits 80/20 for train/test.
 # Run: python src/data_collection/tj_locations.py
 
+import os
 import pandas as pd
 from pathlib import Path
 from geopy.geocoders import Nominatim
@@ -22,6 +23,7 @@ RANDOM_STATE = 42
 def load_locations():
     df = pd.read_csv(INPUT_PATH)
     df = df[df["state"] == "CA"].reset_index(drop=True)
+    df["zip_code"] = df["zip_code"].astype(str).str.zfill(5)
     return df
 
 
@@ -53,10 +55,15 @@ def add_coordinates(df):
 # --- Split ---
 
 def split_locations(df):
-    df        = df.sample(frac=1, random_state=RANDOM_STATE).reset_index(drop=True)
-    split_idx = int(len(df) * TRAIN_RATIO)
-    train_df  = df.iloc[:split_idx].copy()
-    test_df   = df.iloc[split_idx:].copy()
+    # Deduplicate by zip code first to avoid data leakage
+    df_unique  = df.drop_duplicates(subset=["zip_code"]).copy()
+    df_unique  = df_unique.sample(frac=1, random_state=RANDOM_STATE).reset_index(drop=True)
+    split_idx  = int(len(df_unique) * TRAIN_RATIO)
+    train_zips = set(df_unique.iloc[:split_idx]["zip_code"].tolist())
+    test_zips  = set(df_unique.iloc[split_idx:]["zip_code"].tolist())
+
+    train_df = df[df["zip_code"].isin(train_zips)].copy()
+    test_df  = df[df["zip_code"].isin(test_zips)].copy()
     train_df["split"] = "train"
     test_df["split"]  = "test"
     return train_df, test_df
@@ -65,23 +72,28 @@ def split_locations(df):
 # --- Run ---
 
 if __name__ == "__main__":
+    os.makedirs("data/trader_joes", exist_ok=True)
+
     print("Loading locations...")
     df = load_locations()
     print(f"Loaded {len(df)} CA locations.")
 
-    print("Geocoding addresses")
-    df = add_coordinates(df)
-
-    failed = df["latitude"].isna().sum()
-    if failed:
-        print(f"Could not geocode {failed} addresses.")
+    # Only geocode if coordinates are missing
+    if "latitude" not in df.columns or df["latitude"].isnull().all():
+        print("Geocoding addresses (5-10 minutes)...")
+        df = add_coordinates(df)
+        failed = df["latitude"].isna().sum()
+        if failed:
+            print(f"Could not geocode {failed} addresses.")
+    else:
+        print("Coordinates already exist — skipping geocoding.")
 
     df.to_csv(OUTPUT_PATH, index=False)
-    print(f"Saved {len(df)} locations to {OUTPUT_PATH}")
 
     train_df, test_df = split_locations(df)
     train_df.to_csv(TRAIN_PATH, index=False)
     test_df.to_csv(TEST_PATH,   index=False)
 
-    print(f"Train : {len(train_df)}")
-    print(f"Test  : {len(test_df)}")
+    print(f"Total locations : {len(df)}")
+    print(f"Train           : {len(train_df)}")
+    print(f"Test            : {len(test_df)}")
