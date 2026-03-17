@@ -1,3 +1,4 @@
 venv/
 __pycache__/
 .env
+ reports/figures/california_tj_probability_map.html
